@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct InkSpotRetakeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView()
         }
+    }
+    init(){
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
     }
 }
