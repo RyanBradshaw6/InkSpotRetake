@@ -67,8 +67,8 @@ struct DetailView: View {
             ToolbarItem(placement: .confirmationAction) {
                 Button(role: .confirm){
                     tattoo.tatDescription = tatDescription
-                    tattoo.notes = notes
                     tattoo.location = location
+                    tattoo.notes = notes
                     modelContext.insert(tattoo)
                     guard let _ = try? modelContext.save() else { return }
                     

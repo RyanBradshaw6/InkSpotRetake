@@ -13,6 +13,7 @@ struct ListView: View {
     @Query private var tattoos: [Tattoo]
     @Environment(\.modelContext) private var modelContext
     @State private var sheetIsPresented = false
+    
     var body: some View {
         NavigationStack {
             List(tattoos){ tattoo in

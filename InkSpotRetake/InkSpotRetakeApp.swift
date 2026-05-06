@@ -13,6 +13,8 @@ struct InkSpotRetakeApp: App {
     var body: some Scene {
         WindowGroup {
             ListView()
+                .modelContainer(for: Tattoo.self)
+
         }
     }
     init(){
